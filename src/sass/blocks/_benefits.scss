@@ -1,0 +1,51 @@
+.benefits {
+    padding: 73px 0 83px 0;
+    &__wrapper {
+        margin-top: 65px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        column-gap: 68px;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 263px;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        &__title {
+            margin-top: 30px;
+            text-align: center;
+            color: #0D0D0D;
+            font-family: 'Museo Sans Cyrl 700';
+            font-size: 18px;
+            font-weight: 700;
+        }
+        &__descr {
+            margin-top: 20px;
+            text-align: center;
+            color: #0D0D0D;
+            font-family: 'Museo Sans Cyrl 300';
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 18px; /* 128.571% */
+            a {
+                color: #F00;
+                font-family: 'Museo Sans Cyrl 300';
+                font-size: 14px;
+                font-weight: 300;
+                text-decoration-line: underline;
+            }
+        }
+        .heart-animated {
+            animation-name: heartBeat;
+            animation-duration: 1.5s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+}
